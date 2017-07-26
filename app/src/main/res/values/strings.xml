@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Menupedia</string>
+    <string name="login_title">
+        <b>LOGIN</b>
+    </string>
+    <string name="login_forgotPassword">
+        <u>Forgot\nPassword</u>
+    </string>
+    <string name="login_signUp">
+        <u>Sign Up</u>
+    </string>
+    <string name="signUp_title">SIGN UP</string>
+</resources>
