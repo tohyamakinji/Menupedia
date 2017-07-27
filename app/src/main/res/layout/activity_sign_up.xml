@@ -1,14 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_sign_up"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@color/lightOrangeOne"
+        android:id="@+id/activity_sign_up"
         tools:context="com.kinji.menupedia.SignUp">
 
-</RelativeLayout>
+    <LinearLayout
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:text="Username"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        <TextView
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:text="Email"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:fontFamily="monospace"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        <TextView
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:text="Password"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        <TextView
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:text="Retype Password"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        <TextView
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:text="@string/signUP_disclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:text="Country"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <Spinner
+                android:id="@+id/signUp_country"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        <TextView
+                android:id="@+id/signUp_cityText"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:text="City/State"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <Spinner
+                android:id="@+id/signUp_citySpinner"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/signUp_cityDiv"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        <Button
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="REGISTER NOW"
+                android:background="@drawable/rect_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</ScrollView>
