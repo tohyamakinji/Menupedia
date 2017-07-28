@@ -84,6 +84,7 @@
                 android:layout_height="wrap_content"/>
 
         <TextView
+                android:id="@+id/login_fPassword"
                 android:textStyle="bold"
                 android:fontFamily="monospace"
                 android:textColor="@color/white"

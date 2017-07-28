@@ -9,6 +9,10 @@
     <string name="login_signUp">
         <u>Sign Up</u>
     </string>
-    <string name="signUp_title">REGISTER</string>
-    <string name="signUP_disclaimer">This information is needed so we can suggest the proper place nearby your location.</string>
+    <string name="signUp_title"><b>REGISTER</b></string>
+    <string name="signUP_disclaimer">This information is needed so we can suggest the proper place nearby your
+        location.
+    </string>
+    <string name="fPassword_text_1"><b>Please enter 4 digit password that we sent into your email</b></string>
+    <string name="fPassword_title"><b>Forgot Password</b></string>
 </resources>

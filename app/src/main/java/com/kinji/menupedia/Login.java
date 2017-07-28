@@ -15,13 +15,24 @@ public class Login extends Activity {
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.activity_login);
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title_bar);
-        final TextView signUp = findViewById(R.id.login_signUp);
+        final TextView signUp = findViewById(R.id.login_signUp), fPassword = findViewById(R.id.login_fPassword);
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 signUpPressed();
             }
         });
+        fPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fPasswordPressed();
+            }
+        });
+    }
+
+    private void fPasswordPressed() {
+        Intent intent = new Intent(this, FPassword.class);
+        startActivity(intent);
     }
 
     private void signUpPressed() {
