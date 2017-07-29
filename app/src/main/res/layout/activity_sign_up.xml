@@ -179,7 +179,7 @@
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:text="REGISTER NOW"
-                android:background="@drawable/rect_button"
+                android:background="@drawable/rect_button_one"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 

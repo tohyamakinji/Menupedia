@@ -14,5 +14,6 @@
         location.
     </string>
     <string name="fPassword_text_1"><b>Please enter 4 digit password that we sent into your email</b></string>
-    <string name="fPassword_title"><b>Forgot Password</b></string>
+    <string name="fPassword_title"><b>FORGOT PASSWORD</b></string>
+    <string name="home_title"><b>HOME</b></string>
 </resources>

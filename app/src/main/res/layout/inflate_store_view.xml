@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/lightOrangeThree"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/inflateStore_name"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="Name : Bakso mas ujang"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/inflateStore_address"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="Alamat : Jl. Arief Rahman Hakim No. 45, Way Halim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/inflateStore_explore"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:text="EXPLORE"
+            android:background="@drawable/rect_button_three"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+</LinearLayout>
