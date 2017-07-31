@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Window;
+import android.widget.ListView;
 import android.widget.TextView;
+import com.kinji.menupedia.components.HomeListAdapter;
 import com.kinji.menupedia.components.StoreAdapter;
 import com.kinji.menupedia.components.StoreDecorator;
 import com.kinji.menupedia.data.Store;
@@ -40,5 +42,9 @@ public class Home extends Activity {
         }
         RecyclerView.Adapter storesAdapter = new StoreAdapter(stores, this);
         storeView.setAdapter(storesAdapter);
+        // DRAWER LAYOUT
+        String[] strings = getResources().getStringArray(R.array.drawer_item);
+        ListView drawerItem = findViewById(R.id.home_listDrawer);
+        drawerItem.setAdapter(new HomeListAdapter(this, R.layout.inflate_drawer_list, R.id.inflateDrawer_item, strings));
     }
 }

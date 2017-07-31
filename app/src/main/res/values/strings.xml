@@ -16,4 +16,11 @@
     <string name="fPassword_text_1"><b>Please enter 4 digit password that we sent into your email</b></string>
     <string name="fPassword_title"><b>FORGOT PASSWORD</b></string>
     <string name="home_title"><b>HOME</b></string>
+    <string-array name="drawer_item">
+        <item><b>Personal</b></item>
+        <item><b>Post</b></item>
+        <item><b>Setting</b></item>
+        <item><b>About</b></item>
+        <item><b>Sign out</b></item>
+    </string-array>
 </resources>
